@@ -61,14 +61,10 @@ button {
     cursor: pointer;
 }
 
-.assortment-image {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
+
 
     
-.assortment-container {
+.container {
     min-width: 320px;
     margin: 0 auto;
     padding-left: 16px;
@@ -79,23 +75,26 @@ button {
 
 
 
-/* Styles for Tablet devices */
-@media only screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
-}
+/* Section-Assortment */
 
-/* Styles for Desktop devices */
-@media only screen and (min-width: 1200px) {
-    .container {
-        max-width: 1200px;
-    }
-}
+
 .assortment {
     background: #ebf8ed;
     padding-bottom: 32px;
     padding-top: 32px;
+}
+
+.assortment-container {
+    min-width: 320px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    align-items: center;
+}
+.assortment-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .assortment-title {
@@ -111,8 +110,8 @@ button {
 }
 
 .assortment-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
     row-gap: 40px;
 }
 
@@ -149,14 +148,16 @@ button {
     margin-bottom: 16px;
 }
 
-.order-price {
-    margin-top: auto;
+.order-button {
+    /* display: flex;
+        justify-content: center; */
+    /* margin-top: auto;
     display: flex;
     flex-direction: column;
     gap: 16px;
-    /* Відстань між ціною і кнопкою */
-    align-items: center;
-    /* Центрування в межах блоку */
+    
+    align-items: center; */
+   text-align: center;
 }
 
 /* .buy-button {
@@ -250,7 +251,15 @@ button {
 
 }
 
-@media screen and (min-width: 1158px) {
-    .container {
-        padding: 0 15px;
-    } } 
+@media screen and (min-width: 1200px) {
+    .assortment-container {
+            max-width: 1200px;
+            
+        }
+    
+        .assortment-list {
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 24px;
+            row-gap: 64px;
+        }
+}
