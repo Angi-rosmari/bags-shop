@@ -13,6 +13,129 @@
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
+    <header class="header">
+        <div class="container header-wrapper">
+            <a class="header-logo" href="./index.html"><img class="logo" src="/img/images/Logo.svg" alt="logo" width="84"
+                    height="36" /></a>
+            <nav class="header-nav">
+                <ul class="header-nav-list">
+                    <li class="nav-list-item">
+                        <a class="nav-list-link" href="#about">Про нас</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link" href="#advantages">Переваги</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link" href="#assortment">Асортимент</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link" href="#gallery">Галерея</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link" href="#feedbacks">Відгуки</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link" href="#support">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+            <address class="header-address">
+                <ul class="header-address-list">
+                    <li class="address-list-item">
+                        <a class="address-list-link" href="tel:+380999091122">+38 (099) 909 11 22</a>
+                    </li>
+                    <li class="address-list-item">
+                        <a class="address-list-link" href="mailto:hello@ecotote.com">hello@ecotote.com</a>
+                    </li>
+                </ul>
+            </address>
+            <button type="button" class="burger-btn" data-menu-open>
+                <svg class="burger-icon" width="32" height="32">
+                    <use href="/img/images/symbol-defs.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <div class="navbar" data-menu>
+                <div class="container">
+                    <a class="navbar-link-logo" href="/index.html"><img class="logo-navbar" src="/img/images/Logo.svg" alt="logo"
+                            width="84" height="36" /></a>
+                    <button class="close-btn" type="button" data-menu-close>
+                        <svg class="close-icon" width="32" height="32">
+                            <use href="/img/images/symbol-defs.svg#icon-icon"></use>
+                        </svg>
+                    </button>
+                    <nav class="navbar-nav">
+                        <ul class="navbar-list">
+                            <li class="navbar-list-item">
+                                <a class="navbar-list-link" href="#about">Про нас</a>
+                            </li>
+                            <li class="navbar-list-item">
+                                <a class="navbar-list-link" href="#advantages">Переваги</a>
+                            </li>
+                            <li class="navbar-list-item">
+                                <a class="navbar-list-link" href="#assortment">Асортимент</a>
+                            </li>
+                            <li class="navbar-list-item">
+                                <a class="navbar-list-link" href="#gallery">Галерея</a>
+                            </li>
+                            <li class="navbar-list-item">
+                                <a class="navbar-list-link" href="#feedbacks">Відгуки</a>
+                            </li>
+                            <li class="navbar-list-item">
+                                <a class="navbar-list-link" href="#support">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <address class="navbar-address">
+                        <ul class="navbar-address-list">
+                            <li class="navbar-address-list-item">
+                                <a class="navbar-address-list-link" href="tel:+380999091122">+38 (099) 909 11 22</a>
+                            </li>
+                            <li class="navbar-address-list-item">
+                                <a class="navbar-address-list-link" href="mailto:hello@ecotote.com">hello@ecotote.com</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>        
+            </div>
+        </div>
+        </header>
+        <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-text-picture">
+                    <div class="hero-text">
+                        <h1 class="hero-title">EcoTote — Стиль, що не шкодить планеті</h1>
+                        <div class="hero-text-btn">
+                            <p class="hero-paragraph">
+                                Екологічні сумки для тих, хто дбає про майбутнє. Обирайте стиль та
+                                відповідальність разом з EcoTote.
+                            </p>
+        
+                            <a class="hero-btn" href="#assortment">Купити зараз</a>
+                        </div>
+                    </div>
+                    <picture>
+                        <source media="(min-width: 1440px)" srcset="/img/images/hero-1x.png 1x, /img/images/hero-2x.png 2x" />
+                        <source media="(min-width: 768px)" srcset="
+                              /img/images/hero-screen-1x.png 1x,
+                              /img/images/hero-screen-2x.png 2x
+                            " />
+                        <img class="hero-picture" src="/img/images/hero-mobile-1x.png"
+                            srcset="/img/images/hero-mobile-2x.png 2x" alt="ecotote" />
+                    </picture>
+                </div>
+            </div>
+        </section>
+    <section class="about">
+        <div class="container about-container">
+            <h2 class="about-text">Природність</h2>
+            <h3 class="about-title">Турбота про планету</h3>
+            <p class="about-title-text">
+                Ми використовуємо органічну бавовну, перероблений пластик, льон та коноплі
+                для наших сумок.
+            </p>
+        </div>
+        </section>
     <section class="assortment">
         <div class="container assortment-container">
             <h2 class="assortment-title">Наші сумки</h2>
@@ -42,7 +165,7 @@
                         <p class="product-description">
                             Елегантна та містка сумка для щоденного використання.
                         </p><p class="assortment-price">$25</p>
-                        <div  class="order-price">
+                        <div  class="order-button">
                         <button type="submit" class="buy-button">Купити</button>
                     </div>
                     </div>
@@ -252,5 +375,275 @@
                                 </ul>
                 </div>
   </section>
+<section class="gallery" id="gallery-section">
+    <div class="container">
+        <h2 class="gallery-title">Галерея зображень</h2>
+        <h3 class="gallery-subtitle">EcoTotes у повсякденному житті</h3>
+        <ul class="gallery-list">
+
+            <li class="gallery-item">
+                <picture>
+                    <source srcset="./img/images/eco-tote-placed-2x.png" media="(min-width: 1440px)" />
+                    <source srcset="./img/images/eco-tote-placed-1x.png" media="(min-width: 768px)" />
+                    <img src="./img/images/eco-tote-placed-1x.png"
+                        alt="An eco tote placed on a chair or beside a table at a cozy coffee shop" class="gallery-img"
+                        loading="lazy" />
+                </picture>
+            </li>
+
+
+            <li class="gallery-item">
+                <picture>
+                    <source srcset="
+                ./img/images/city-person-2x.png 2x,
+                ./img/images/city-person-1x.png 1x
+              " media="(min-width: 1440px)" />
+                    <source srcset="
+                ./img/images/city-person-mobile-2x.png 2x,
+                ./img/images/city-person-mobile-1x.png 1x
+              " media="(max-width: 768px)" />
+                    <img src="./img/images/city-person-1x.png"
+                        alt="A city scene where a stylish person carries a tote bag" class="gallery-img"
+                        loading="lazy" />
+                </picture>
+            </li>
+
+
+            <li class="gallery-item">
+                <picture>
+                    <source srcset="
+                ./img/images/person-walking-1x.png 1x,
+                ./img/images/person-walking-2x.png 2x
+              " media="(min-width: 1440px)" />
+                    <source srcset="
+                ./img/images/person-walking-1x.png 1x,
+                ./img/images/person-walking-2x.png 2x
+              " media="(min-width: 768px)" />
+                    <img srcset="
+                ./img/images/person-walking-mobile-1x.png 1x,
+                ./img/images/person-walking-mobile-2x.png 2x
+              " src="./img/images/person-walking-mobile-1x.png" alt="A person walking with a recycle eco tote bag"
+                        class="gallery-img" loading="lazy" />
+                </picture>
+
+
+            </li>
+
+            <li class="gallery-item">
+                <picture>
+                    <img srcset="
+                ./img/images/young-woman-holding-1x.png 1x,
+                ./img/images/young-woman-holding-2x.png 2x
+              " src="./img/images/young-woman-holding-1x.png" alt="A young woman holding a large eco tote bag"
+                        class="gallery-img" loading="lazy" />
+                </picture>
+            </li>
+        </ul>
+    </div>
+    </section>
+<section class="feedbacks" id="feedbacks">
+    <div class="container feedbacks-container">
+        <h2 class="feedbacks-title">Що говорять наші клієнти</h2>
+        <ul class="feedbacks-list">
+            <li class="feedbacks-item">
+                <div class="feedbacks-rating">
+                    <svg class="feedbacks-star-icon filled" width="16" height="16">
+                        <use href="./img/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="feedbacks-star-icon filled" width="16" height="16">
+                        <use href="./img/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="feedbacks-star-icon filled" width="16" height="16">
+                        <use href="./img/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="feedbacks-star-icon filled" width="16" height="16">
+                        <use href="./img/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="feedbacks-star-icon filled" width="16" height="16">
+                        <use href="./img/sprite.svg#icon-star"></use>
+                    </svg>
+                </div>
+                <p class="feedbacks-text">
+                    Сумка дуже зручна та стильна, використовую щодня!
+                </p>
+                <p class="feedbacks-customer-name">Анна</p>
+            </li>
+            <li class="feedbacks-item">
+                <div class="feedbacks-rating">
+                    <svg class="feedbacks-star-icon filled" width="16" height="16">
+                        <use href="./img/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="feedbacks-star-icon filled" width="16" height="16">
+                        <use href="./img/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="feedbacks-star-icon filled" width="16" height="16">
+                        <use href="./img/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="feedbacks-star-icon filled" width="16" height="16">
+                        <use href="./img/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="feedbacks-star-icon" width="16" height="16">
+                        <use href="./img/sprite.svg#icon-star"></use>
+                    </svg>
+                </div>
+                <p class="feedbacks-text">
+                    Відмінна якість матеріалів, приємно здивована.
+                </p>
+                <p class="feedbacks-customer-name">Ігор</p>
+            </li>
+            <li class="feedbacks-item">
+                <div class="feedbacks-rating">
+                    <svg class="feedbacks-star-icon filled" width="16" height="16">
+                        <use href="./img/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="feedbacks-star-icon filled" width="16" height="16">
+                        <use href="./img/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="feedbacks-star-icon filled" width="16" height="16">
+                        <use href="./img/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="feedbacks-star-icon filled" width="16" height="16">
+                        <use href="./img/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="feedbacks-star-icon" width="16" height="16">
+                        <use href="./img/sprite.svg#icon-star"></use>
+                    </svg>
+                </div>
+                <p class="feedbacks-text">
+                    Сумка повністю відповідає опису, рекомендую!
+                </p>
+                <p class="feedbacks-customer-name">Олена</p>
+            </li>
+            <li class="feedbacks-item">
+                <div class="feedbacks-rating">
+                    <svg class="feedbacks-star-icon filled" width="16" height="16">
+                        <use href="./img/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="feedbacks-star-icon filled" width="16" height="16">
+                        <use href="./img/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="feedbacks-star-icon filled" width="16" height="16">
+                        <use href="./img/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="feedbacks-star-icon filled" width="16" height="16">
+                        <use href="./img/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="feedbacks-star-icon filled" width="16" height="16">
+                        <use href="./img/sprite.svg#icon-star"></use>
+                        </svg>
+                        </div>
+                        <p class="feedbacks-text">Швидка доставка та гарне обслуговування.</p>
+                        <p class="feedbacks-customer-name">Сергій</p>
+                        </li>
+                        </ul>
+                        </div>
+                        </section>
+                        <section class="support">
+                            <div class="container">
+                                <div class="support-content">
+                                    <h2 class="support-title">Залишились питання? Зв'яжіться з нами!</h2>
+                                    <p class="support-subtitle">Ми тут, щоб допомогти!</p>
+                        
+                                    <form class="support-form" novalidate>
+                                        <div class="form-group">
+                                            <label class="form-label" for="user-name">Ім'я</label>
+                                            <input class="form-input" type="text" id="user-name" name="user-name" required minlength="5"
+                                                maxlength="64" placeholder="Іван" aria-describedby="name-hint" />
+                                            <span id="name-hint" class="error-message">Будь ласка, введіть коректне ім'я (мін. 5
+                                                символів)</span>
+                                        </div>
+                        
+                                        <div class="form-group">
+                                            <label class="form-label" for="user-email">Електронна пошта</label>
+                                            <input class="form-input" type="email" id="user-email" name="user-email" required
+                                                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="hello@ecotote.com"
+                                                aria-describedby="email-hint" />
+                                            <span id="email-hint" class="error-message">Будь ласка, введіть коректну email адресу</span>
+                                        </div>
+                        
+                                        <div class="form-group">
+                                            <label class="form-label" for="user-comment">Повідомлення</label>
+                                            <textarea class="form-textarea" id="user-comment" name="user-comment" required maxlength="500"
+                                                placeholder="Введіть своє повідомлення..." aria-describedby="comment-hint"></textarea>
+                                            <span id="comment-hint" class="error-message">Будь ласка, введіть ваше повідомлення</span>
+                                        </div>
+                        
+                                        <button class="submit-btn" type="submit">Надіслати</button>
+                                    </form>
+                                </div>
+                        
+                                <div class="support-image" role="img" aria-label="Зображення підтримки"></div>
+                            </div>                
+                        </section>
+                    </main>
+                    <footer class="footer">
+                        <div class="container">
+                            <div class="footer-container">
+                                <div class="footer-logo-container">
+                                    <a href="" class="footer-logo"><img src="/img/images/Logo.svg" alt="EcoTate logo" width="281"
+                                            height="121" />
+                                    </a>
+                                </div>
+                    
+                                <!-- navigatiom -->
+                                <div class="footer-nav-container">
+                                    <nav class="footer-nav">
+                                        <ul class="footer-nav-list">
+                                            <li class="footer-nav-item"><a href="#about">Про нас</a></li>
+                                            <li class="footer-nav-item"><a href="#benefits">Переваги</a></li>
+                                            <li class="footer-nav-item"><a href="#products">Асортимент</a></li>
+                                            <li class="footer-nav-item"><a href="#gallery">Галерея</a></li>
+                                            <li class="footer-nav-item"><a href="#revievs">Відгуки</a></li>
+                                            <li class="footer-nav-item"><a href="#contacts">Контакти</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                    
+                                <div class="footer-social-container">
+                                    <ul class="footer-social-list">
+                                        <li class="footer-social-item">
+                                            <a class="footer-social-item-link" href=""><svg class="footer-social-icon" width="24"
+                                                    height="25">
+                                                    <use href="../img/sprite.svg#icon-instagram"></use>
+                                                </svg></a>
+                    
+                                        </li>
+                                        <li class="footer-social-item">
+                                            <a class="footer-social-item-link" href=""><svg class="footer-social-icon" width="24"
+                                                    height="25">
+                                                    <use href="../img/sprite.svg#icon-linkedin"></use>
+                                                </svg></a>
+                    
+                                        </li>
+                                        <li class="footer-social-item">
+                                            <a class="footer-social-item-link" href=""><svg class="footer-social-icon" width="28"
+                                                    height="19">
+                                                    <use href="../img/sprite.svg#icon-youtube"></use>
+                                                </svg></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                    
+                            <!-- contacts info -->
+                            <div class="footer-contacts-container">
+                                <address class="footer-contacts">
+                                    <ul class="contacts-list">
+                                        <li class="contacts-item">
+                                            <a class="contacts-link" href="tel:+380999091122">+38 (099) 909 11 22</a>
+                                        </li>
+                                        <li class="contacts-item">
+                                            <a class="contacts-link" href="mailto:hello@ecotote.com">hello@ecotote.com</a>
+                                        </li>
+                                    </ul>
+                                </address>
+                                <div class="footer-copyright">
+                                    <p class="footer-copyright-text">
+                                        &copy; 2025 EcoTote. Всі права захищені.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
 </body>
 </html>
